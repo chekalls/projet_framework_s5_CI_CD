@@ -1,3 +1,4 @@
 backoffice/log/*
 backoffice/bin/
 backoffice/lib/*
+backoffice/WEB/WEB-INF/lib/
