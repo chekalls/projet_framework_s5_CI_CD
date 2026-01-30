@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+                             http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+
+    <!-- ===== Security configuration ===== -->
+
+    <context-param>
+        <param-name>security.enabled</param-name>
+        <param-value>true</param-value>
+    </context-param>
+
+    <context-param>
+        <param-name>security.loginUrl</param-name>
+        <param-value>/login</param-value>
+    </context-param>
+
+    <context-param>
+        <param-name>security.accessDeniedUrl</param-name>
+        <param-value>/access-denied</param-value>
+    </context-param>
+
+    <context-param>
+        <param-name>security.authenticationProvider</param-name>
+        <param-value>Controlleur.SimpleAuthenticationProvider</param-value>
+    </context-param>
+
+    <context-param>
+        <param-name>security.user.attributeName</param-name>
+        <param-value>user_connected</param-value>
+    </context-param>
+
+    <context-param>
+        <param-name>security.role.attributeName</param-name>
+        <param-value>user_role</param-value>
+    </context-param>
+
+</web-app>
